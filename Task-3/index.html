@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Converter Celsius to Fahrenheit" />
+    <meta name="keywords" content="converter, calculator, celsius, fahrenheit" />
+    <meta name="author" content="Piotr Maliga" />
+    <title>Temperature Convertor</title>
+
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconcert" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="icon.jpg" type="image/png">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <label for="converter">Temperature <span class="C"> Unit </span> Converter</span></label>
+    </header>
+
+    <div>
+        <input type="number" id="converter" placeholder="Enter Temperature">
+    </div>
+    <div>
+        <h3 class="margin">Please select the Unit</h3>
+    </div>
+    <div class="radio-button">
+       
+        <input type="radio" id="celsius" name="radio-button" value="°C"style="height:35px; width:35px;" class="margin carousel celsius-button ">
+        <label for="celsius"class="margin padding carousel ">°C</label><br>
+        <input type="radio" id="fahrenheit" name="radio-button" value="°F"style="height:35px; width:35px;" class="margin carousel fahrenheit-button">
+        <label for="fahrenheit"class="margin padding carousel fahrenheit-button">°F</label><br>
+        <input type="radio" id="kelvin" name="radio-button" value="°K"style="height:35px; width:35px;" class="margin carousel kelvin-button">
+        <label for="kelvin"class="margin carousel kelvin-button">°K</label>
+    </div>
+    <p class="result"></p>
+
+    <div id="buttons">
+        <button class="convertButton">Convert </button>
+        <button class="resetButton">Reset</button>
+       
+    </div>
+</body>
+
+</html>
